@@ -16,7 +16,7 @@ export default function UserProfile() {
       const data = await res.json();
       setdata(data);
       setloading(false);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       seterror(error);
       setloading(false);
