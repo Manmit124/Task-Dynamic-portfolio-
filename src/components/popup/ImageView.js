@@ -24,7 +24,7 @@ const ImgViews = ({ close, src }) => {
             </div>
           </div>
           <div className="mfp-preloader">Loading...</div>
-        </div>
+        </div> 
       </div>
     </Fragment>
   );
@@ -36,9 +36,9 @@ const ImageView = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      const a = document.querySelectorAll("a");
+      const a = document.querySelectorAll("button");
       a.forEach((a) => {
-        if (a.href.includes("assets/img/")) {
+        if (a.href.includes("https://portfolio-image-store.s3.ap-south-1.amazonaws.com/")) {
           if (a.getAttribute("download") === null) {
             a.addEventListener("click", (e) => {
               e.preventDefault();
@@ -57,3 +57,4 @@ const ImageView = () => {
   );
 };
 export default ImageView;
+// https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285431821-3lfg2r

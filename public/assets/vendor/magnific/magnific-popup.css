@@ -232,7 +232,7 @@ button::-moz-focus-inner {
   overflow: hidden;
   padding-top: 56.25%; }
   .mfp-iframe-scaler iframe {
-    position: absolute;
+    /* position: absolute; */
     display: block;
     top: 0;
     left: 0;
@@ -243,13 +243,13 @@ button::-moz-focus-inner {
 
 /* Main image in popup */
 img.mfp-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
+  width: 12rem;
+  /* max-width: 1; */
+  height: 12rem;
   display: block;
   line-height: 0;
   box-sizing: border-box;
-  padding: 40px 0 40px;
+  /* padding: 40px 0 40px; */
   margin: 0 auto; }
 
 /* The shadow behind the image */

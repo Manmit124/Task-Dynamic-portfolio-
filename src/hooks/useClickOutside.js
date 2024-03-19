@@ -1,22 +1,19 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from 'react';
 
-let useClickOutside = (handler) => {
-  let domNode = useRef();
-
+// Custom hook to handle click outside
+function useOutsideClick(ref, callback) {
   useEffect(() => {
-    let maybeHandler = (event) => {
-      if (!domNode.current.contains(event.target)) {
-        handler();
+    function handleClickOutside(event) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        callback();
       }
-    };
+    }
 
-    document.addEventListener("mousedown", maybeHandler);
-
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", maybeHandler);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
-  });
+  }, [ref, callback]);
+}
 
-  return domNode;
-};
-export default useClickOutside;
+export default useOutsideClick;
