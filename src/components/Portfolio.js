@@ -73,38 +73,20 @@ const Portfolio = () => {
         </div>
         {isModalOpen && (
           <>
-            <div className="mfp-bg mfp-ready" onClick={() => handleClose()}>
-      
-            </div>
+            <div
+              className="mfp-bg mfp-ready"
+              onClick={() => handleClose()}
+            ></div>
             <div
               className="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready"
               tabIndex={-1}
               style={{ overflow: "hidden auto" }}
             >
-              <div
-                className={` popup-container `}
-              >
-                {/* <div className="mfp-content " > */}
-                {/* <div className="mfp-iframe-scaler"> */}
-
-                {/* <div>
-                  <div>
-                    <img
-                      src={data?.user?.about?.avatar?.url}
-                      onClick={() => setIsModalOpen(false)}
-                    />
-                  </div>
-                  <div>
-                    <button
-                      style={{ backgroundColor: "green" }}
-                      onClick={() => setIsModalOpen(false)}
-                    >
-                      {selectedProject?.title}
-                    </button>
-                  </div>
-                </div> */}
-                <ProjectModel project={selectedProject} setIsModalOpen={setIsModalOpen} />
-                {/* <div className="mfp-preloader">Loading...</div> */}
+              <div className={` popup-container `}>
+                <ProjectModel
+                  project={selectedProject}
+                  setIsModalOpen={setIsModalOpen}
+                />
               </div>
             </div>
           </>

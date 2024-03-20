@@ -18,8 +18,8 @@ const Home = () => {
               <h6>
                 <span>Hello.</span>
               </h6>
-              <h1 className="text-justify ">{about?.subTitle}</h1>
-              <p>{about?.description}</p>
+              <h1 className="text-justify ">{about?.name}</h1>
+              <h4>{about?.subTitle}</h4>
               <div className="btn-bar">
                 <a className="px-btn px-btn-theme" href="#contactus">
                   Let’s Talk
