@@ -15,7 +15,7 @@ const About = () => {
           <h1>{about?.title}</h1>
           <span>Total Experience : {about?.exp_year} years</span>
           <p>{about?.description}</p>
-          <h3>{about?.quote}</h3>
+          <h3>&quot;{about?.quote}&quot;</h3>
         </div>
       </div>
     </section>
