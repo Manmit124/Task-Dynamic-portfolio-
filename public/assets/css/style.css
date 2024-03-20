@@ -80,54 +80,52 @@ Primary use:    pxdraft
   }
 }
 
-
 /* footer section starts */
-.footer{
+.footer {
   min-height: auto;
   padding-top: 0;
   background: rgb(0, 1, 43);
-
 }
-.footer .box-container{
+.footer .box-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.footer .box-container .box{
+.footer .box-container .box {
   flex: 1 1 25rem;
   margin: 2rem;
 }
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
   font-size: 1.5rem;
   color: #fff;
   /* padding-bottom: 1rem; */
   font-weight: normal;
 }
-.footer .box-container .box p{
+.footer .box-container .box p {
   font-size: 1.5rem;
   color: #ccc;
-  padding: .7rem 0;
+  padding: 0.7rem 0;
   text-transform: none;
 }
-.footer .box-container .box p i{
+.footer .box-container .box p i {
   padding-right: 1rem;
   color: #ffae00;
 }
-.footer .box-container .box a{
-  font-size: 1.0rem;
+.footer .box-container .box a {
+  font-size: 1rem;
   color: rgb(238, 238, 238);
-  padding: .3rem 0;
+  padding: 0.3rem 0;
   display: block;
 }
-.footer .box-container .box a:hover{
+.footer .box-container .box a:hover {
   color: #ffae00;
 }
-.footer .box-container .box .share{
+.footer .box-container .box .share {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem 0;
 }
-.footer .box-container .box .share a{
+.footer .box-container .box .share a {
   height: 2rem;
   width: 2rem;
   /* padding: .3rem; */
@@ -142,7 +140,7 @@ Primary use:    pxdraft
   /* border-radius: 5rem; */
   font-size: 1.2rem;
   margin-right: 1rem;
-  transition: .2s;
+  transition: 0.2s;
 
   /* background: rgb(230, 230, 230); */
   /* color: #02094b; */
@@ -168,48 +166,48 @@ Primary use:    pxdraft
   border: .1rem solid rgb(180, 178, 178);
   color: #ffae00;
 } */
-.footer .credit{
+.footer .credit {
   padding: 1rem 0 0 0;
   text-align: center;
   font-size: 1.5rem;
-  font-family: 'Nunito',sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 600;
   color: #fff;
-  border-top: .1rem solid #fff3;
+  border-top: 0.1rem solid #fff3;
 }
-.footer .credit a{
+.footer .credit a {
   color: #ffae00;
 }
-.footer-social{
+.footer-social {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 }
-.footer .fa{
-    color: #E90606;
-    margin: 0 .3rem;
-    font-size: 1.5rem;
-    animation: pound .35s infinite alternate;
+.footer .fa {
+  color: #e90606;
+  margin: 0 0.3rem;
+  font-size: 1.5rem;
+  animation: pound 0.35s infinite alternate;
 }
-@-webkit-keyframes pound{
-  to{
+@-webkit-keyframes pound {
+  to {
     transform: scale(1.1);
   }
 }
-@keyframes pound{
-  to{
+@keyframes pound {
+  to {
     transform: scale(1.1);
+  }
 }
-}
-@media(max-width:450px){
-  .footer .box-container .box{
+@media (max-width: 450px) {
+  .footer .box-container .box {
     margin: 2rem;
   }
-  .footer .box-container .box p{
+  .footer .box-container .box p {
     padding: 0.7rem;
   }
-  .footer .box-container .box .share a{
+  .footer .box-container .box .share a {
     padding: 1.1rem;
   }
 }
@@ -546,17 +544,20 @@ main {
   overflow: hidden;
   width: 100%;
   height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+
 }
 
 .home-image img {
   width: 100%;
   height: 500px;
+  border: #333 1px solid;
+  
 }
 
 @media (max-width: 991px) {
   .home-section .home-image {
     text-align: center;
-
   }
 }
 
@@ -837,9 +838,6 @@ main {
 /* Portfolio 
 ---------------------*/
 
-
-
-
 .portfolio-box {
   border: 2px solid #18171c;
   background: #fff;
@@ -1036,15 +1034,14 @@ main {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   cursor: pointer;
-  border-bottom:  1px solid #555555;
+  border-bottom: 1px solid #555555;
 }
 
 .project-info {
   padding: 20px;
 }
-.tech-title{
+.tech-title {
   font-size: 18px;
-
 }
 .project-title {
   font-size: 18px;
@@ -1069,7 +1066,7 @@ main {
   margin-top: 20px;
 }
 
-.project-stack{
+.project-stack {
   display: flex;
   flex-direction: row;
   padding: 5px;
@@ -1086,13 +1083,13 @@ main {
   margin-right: 10px;
   font-size: 14px;
 }
-.project-desk{
+.project-desk {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.project-icon{
+.project-icon {
   gap: 2px;
   padding: 5px;
   font-weight: 100;
