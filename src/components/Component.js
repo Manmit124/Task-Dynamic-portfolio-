@@ -11,6 +11,7 @@ import Contact from "./Contact"
 import ImageView from "./popup/ImageView"
 import {boston} from "../lib/utils"
 import {  useEffect } from "react";
+import About from "./About";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Home />
         {/* End Home Section */}
         {/* Services Section */}
+        <About/>
         <Services />
         {/* End Services Section */}
         {/* Skill Section */}

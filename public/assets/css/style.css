@@ -634,6 +634,61 @@ main {
   object-fit: cover;
 }
 
+/* about */
+.about--section {
+  display: grid;
+  padding: 133.3px 85.3px;
+  align-items: center;
+  gap: 114.6px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about--section--img > img {
+  width: 100%;
+  height: 100%;
+}
+.hero--section--content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.hero--section--content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21.333px;
+}
+.section--title {
+  color: var(--heading-color);
+  font-size: 21px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-start;
+}
+.hero--section-description,
+  .footer--content {
+    text-align: center;
+  }
+  .hero--section-description {
+    color: var(--darkblue);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+  .additional-info {
+    margin-top: 30px;
+  }
+  
+  .additional-info p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+/* About Us Ends */
+/* end about */
 /* Portfolio 
 ---------------------*/
 
